@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Registration Form</h1>
+        <form>
+                <label for="name">Master/Student:</label>
+                <select id="login_mode">
+                    <option value="" disabled hidden selected>Select</option>
+                    <option value="master">Master</option>
+                    <option value="student">Student</option>
+                </select>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="sign-name" placeholder="Name"><br/>
+                <label for="user">Username:</label>
+                <input type="text" name="user" id="sign-user" placeholder="Username"><br/>
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="sign-pass" placeholder="Password"><br/>
+                <label for="cpass">Confrim password:</label>
+                <input type="password" name="cpass" id="sign-cpass" placeholder="Password"><br/>
+                <div class="submit"><button type="submit" class="resgiter" id="sign-submit" onclick="login_form()">Register</button></div>
+                <div class="message"></div>
+        </form>
+        <div class="not-signin">
+            <div class="sign">Already member <a href="index.html">Login</a></div>
+        </div>
+
+
+
+    </div>
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>

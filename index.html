@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Login</h1>
+        <form>
+                <label for="user">Username:</label>
+                <input type="text" name="user" id="user" placeholder="Username"><br/>
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="pass" placeholder="Password"><br/>
+                <div class="submit"><button type="submit" id="login-submit" onclick="login_form()">Login</button></div>
+                <div class="message"></div>
+        </form>
+        <div class="not-signin">
+            <div class="sign">Not a member <a href="signin.html">Register now</a></div>
+        </div>
+
+
+
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
